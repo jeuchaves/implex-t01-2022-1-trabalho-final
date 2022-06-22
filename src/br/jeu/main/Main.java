@@ -23,9 +23,8 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		long tempoInicial = System.currentTimeMillis();
 		
-		// Execução do teste no att48.tsp usando HillClimbing
-		Posicao[] posicoes = Leitor.lerArquivo(registros[2]);
-		HillClimbing hc = new HillClimbing(10000, posicoes);
+		Posicao[] posicoes = Leitor.lerArquivo(registros[0]);
+		HillClimbing hc = new HillClimbing(10, posicoes);
 		int menorCaminho = hc.encontrarMenorCaminho();
 		System.out.println("O menor caminho encontrado foi de " + menorCaminho);
 		
