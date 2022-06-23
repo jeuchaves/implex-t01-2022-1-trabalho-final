@@ -1,4 +1,4 @@
-package br.jeu.heuristica.tsp.hillClimbing.versao1;
+package br.jeu.heuristica.tsp;
 
 import java.util.Arrays;
 import java.util.Random;
