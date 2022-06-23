@@ -100,7 +100,7 @@ O bug consistia em duas partes do código: A primeira era na função calcularDi
     <td>51.887 em 611s</td>
     <td>212.802 em 269s</td>
     <td>2.611 em 592s</td>
-    <td>1.234 em 207s/td>
+    <td>1.234 em 207s</td>
   </tr>
 </table>
   
