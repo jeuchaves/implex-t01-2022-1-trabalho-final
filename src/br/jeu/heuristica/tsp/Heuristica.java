@@ -54,17 +54,17 @@ public abstract class Heuristica {
 	 * @return Lista com todos os vizinhos encontrados
 	 */
 	protected int[][] encontrarVizinhos(int[] caminhoPontoCorrente) {
-		int[][] vizinhos = new int[caminhoPontoCorrente.length-1][caminhoPontoCorrente.length];
+		int[][] vizinhos = new int[caminhoPontoCorrente.length-2][caminhoPontoCorrente.length];
 		
 		/**
-		 * A tecnica para encontrar vizinha utilizada nesse codigo e
-		 * trocar a posicao do primeiro elemento da lista com as demais posicoes.
+		 * A quantida de vizinhos corresponde ao tamanho do vetor-2
 		 */
 		for(int i = 0; i < vizinhos.length; i++) {
-			vizinhos[i] = Arrays.copyOf(caminhoPontoCorrente, caminhoPontoCorrente.length);
-			int aux = vizinhos[i][0];
-			vizinhos[i][0] = vizinhos[i][i+1];
-			vizinhos[i][i+1] = aux;
+			int[] vizinho = Arrays.copyOf(caminhoPontoCorrente, caminhoPontoCorrente.length);
+			int aux = vizinho[i];
+			vizinho[i] = vizinho[i+2];
+			vizinho[i+2] = aux;
+			vizinhos[i] = vizinho;
 		}
 		return vizinhos;
 	}

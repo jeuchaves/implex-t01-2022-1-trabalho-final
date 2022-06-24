@@ -22,7 +22,7 @@ public class HillClimbing extends Heuristica {
 	 * Escolher aleatoriamente um caminho entre todos os vertices
 	 * @return Caminho escolhido
 	 */
-	private int[] selecionarPontoCorrenteAleatoriamente() {
+	public int[] selecionarPontoCorrenteAleatoriamente() {
 		int[] vertices = new int[posicoes.length];
 		int i = 0;
 		while(i < posicoes.length-1) {
