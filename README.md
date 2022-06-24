@@ -166,4 +166,135 @@ O bug consistia em duas partes do código: A primeira era na função calcularDi
     <td>207s</td>
   </tr>
 </table>
+
+#### Versão 1.2
+
+##### Relatório sobre o programa: 24/06/2022 às 09h26
+Como ainda não tinha a fórmula para geração de vizinhos do trabalho eu realizei um método diferente nas versões anteriores para isso. No entanto, essa versão conta com os resultados da geração de vizinhos requisitada pelo professor
+
+<table>
+  <tr>
+    <th>Quantidade de Interações</th>
+    <th>att48</th>
+    <th>berlin52</th>
+    <th>bier127</th>
+    <th>eil76</th>
+    <th>kroA100</th>
+    <th>kroE100</th>
+    <th>pr76</th>
+    <th>rat99</th>
+    <th>st70</th>
+  </tr>
+  <tr>
+    <td>1.000</td>
+    <td>83.642</td>
+    <td>18.627</td>
+    <td>432.599</td>
+    <td>1.570</td>
+    <td>102.274</td>
+    <td>99.654</td>
+    <td>354.143</td>
+    <td>4.780</td>
+    <td>2.200</td>
+  </tr>
+  <tr>
+    <td>10.000</td>
+    <td>79.464</td>
+    <td>17.052</td>
+    <td>411.684</td>
+    <td>1.471</td>
+    <td>97.772</td>
+    <td>98.249</td>
+    <td>344.527</td>
+    <td>4.710</td>
+    <td>2.127</td>
+  </tr>
+  <tr>
+    <td>50.000</td>
+    <td>76.356</td>
+    <td>16.792</td>
+    <td>408.008</td>
+    <td>1.449</td>
+    <td>95.252</td>
+    <td>96.407</td>
+    <td>326.815</td>
+    <td>4.592</td>
+    <td>2.038</td>
+  </tr>
+  <tr>
+    <td>100.000</td>
+    <td>73.759</td>
+    <td>16.402</td>
+    <td>411.590</td>
+    <td>1.456</td>
+    <td>92.984</td>
+    <td>92.413</td>
+    <td>335.431</td>
+    <td>4.548</td>
+    <td>2.003</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Quantidade de Interações</th>
+    <th>att48</th>
+    <th>berlin52</th>
+    <th>bier127</th>
+    <th>eil76</th>
+    <th>kroA100</th>
+    <th>kroE100</th>
+    <th>pr76</th>
+    <th>rat99</th>
+    <th>st70</th>
+  </tr>
+  <tr>
+    <td>1.000</td>
+    <td>0s</td>
+    <td>0s</td>
+    <td>11s</td>
+    <td>2s</td>
+    <td>5s</td>
+    <td>5s</td>
+    <td>2s</td>
+    <td>5s</td>
+    <td>1s</td>
+  </tr>
+  <tr>
+    <td>10.000</td>
+    <td>6s</td>
+    <td>7s</td>
+    <td>109s</td>
+    <td>22s</td>
+    <td>54s</td>
+    <td>54s</td>
+    <td>23s</td>
+    <td>51s</td>
+    <td>17s</td>
+  </tr>
+  <tr>
+    <td>50.000</td>
+    <td>30s</td>
+    <td>37s</td>
+    <td>547s</td>
+    <td>109s</td>
+    <td>271s</td>
+    <td>270s</td>
+    <td>114s</td>
+    <td>254s</td>
+    <td>86s</td>
+  </tr>
+  <tr>
+    <td>100.000</td>
+    <td>60s</td>
+    <td>75s</td>
+    <td>1094s</td>
+    <td>219s</td>
+    <td>542s</td>
+    <td>540s</td>
+    <td>229s</td>
+    <td>509s</td>
+    <td>173s</td>
+  </tr>
+</table>
   
