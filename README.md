@@ -1,5 +1,89 @@
 # Implex T01 2022-1 Trabalho Final
 
+## Detalhes da Implementação
+
+### Calcular distância
+A distância euclidiana é calculada pela fórmula:
+
+![distancia-euclidiana](https://user-images.githubusercontent.com/81452517/175548824-2f0b5e79-71aa-47b3-a61c-0ce81db39710.png)
+
+### Melhores soluções conhecidas para os arquivos:
+<table>
+  <tr>
+    <th>att48</th>
+    <th>berlin52</th>
+    <th>bier127</th>
+    <th>eil76</th>
+    <th>kroA100</th>
+    <th>kroE100</th>
+    <th>pr76</th>
+    <th>rat99</th>
+    <th>st70</th>
+  </tr>
+  <tr>
+    <th>10.628</th>
+    <th>7.542</th>
+    <th>118.282</th>
+    <th>538</th>
+    <th>21.282</th>
+    <th>22.068</th>
+    <th>108.159</th>
+    <th>1.211</th>
+    <th>675</th>
+  </tr>
+</table>
+
+### Casos de estudo para o Simulated Annealing:
+
+<table>
+  <tr>
+    <th>Casos</th>
+    <th>Tmax</th>
+    <th>k</th>
+    <th>Kt</th>
+    <th>Tmin</th>
+  </tr>
+  <tr>
+    <th>A</th>
+    <th>10</th>
+    <th>0.95</th>
+    <th>20</th>
+    <th>5</th>
+  </tr>
+  <tr>
+    <th>B</th>
+    <th>100</th>
+    <th>0.9</th>
+    <th>25</th>
+    <th>10</th>
+  </tr>
+  <tr>
+    <th>C</th>
+    <th>*</th>
+    <th>*</th>
+    <th>*</th>
+    <th>*</th>
+  </tr>
+</table>
+
+### Encontrar Vizinhança
+
+A vizinhança da solução corrente vc será obtida pelo mapeamento 2-troca em que duas
+arestas não adjacentes são trocadas. A geração de um vizinho de uma solução corrente
+SolucaoCorrente, trocando as arestas i?1, i e k, k + 1 
+
+## Detalhes de Entrega
+
+- Os códigos fontes de cada implementação
+- Um arquivo readme com as instruções de compilação e execução
+- Um relatório sucinto contendo:
+  - A descrição de uma aplicação do TSP, e
+  - Os resultados encontrados comparados com os melhores resultados existentes para as instâncias fornecidas
+  
+## Descrição
+
+O Problema do Caixeiro Viajante (PCV) é um problema que tenta determinar a menor rota para percorrer uma série de cidades (visitando uma única vez cada uma delas), retornando à cidade de origem. Ele é um problema de otimização NP-difícil inspirado na necessidade dos vendedores em realizar entregas em diversos locais (as cidades) percorrendo o menor caminho possível, reduzindo o tempo necessário para a viagem e os possíveis custos com transporte e combustível.
+
 ## Resultados
 
 ### Hill-Climb
