@@ -440,3 +440,113 @@ Essa versão apresenta um problema onde os resultados obtidos demoram muito pouc
     <td>3.585</td>
   </tr>
 </table>
+
+#### Versão 1.1
+
+##### Relatório sobre o programa: 27/06/2022 às 22h27
+Problema resolvido, o algoritmo não fazia a leitura da quantida de iteracoes e acabava não entrando no laço.
+<br>Caso C -> Temperatura máxima: 10000; Razão de esfriamento: 0.99; Quantidade de iterações: 1000; Temperatura minima: 5;
+
+<table>
+  <tr>
+    <th>Caso</th>
+    <th>att48</th>
+    <th>berlin52</th>
+    <th>bier127</th>
+    <th>eil76</th>
+    <th>kroA100</th>
+    <th>kroE100</th>
+    <th>pr76</th>
+    <th>rat99</th>
+    <th>st70</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>130.476</td>
+    <td>22.146 </td>
+    <td>511.359</td>
+    <td>1.946</td>
+    <td>124.030</td>
+    <td>136.167</td>
+    <td>444.228</td>
+    <td>6.227</td>
+    <td>2.826</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>94.762</td>
+    <td>20.263</td>
+    <td>527.773</td>
+    <td>1.884</td>
+    <td>122.802</td>
+    <td>148.251</td>
+    <td>436.661</td>
+    <td>6.437</td>
+    <td>2.736</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>127.195</td>
+    <td>21.336</td>
+    <td>513.680</td>
+    <td>1.873</td>
+    <td>140.256</td>
+    <td>128.621</td>
+    <td>441.842</td>
+    <td>5.879</td>
+    <td>2.656</td>
+  </tr>
+</table>
+
+Resultados do caso C com alterações: 
+
+<table>
+  <tr>
+    <th>Caso</th>
+    <th>att48</th>
+    <th>berlin52</th>
+    <th>bier127</th>
+    <th>eil76</th>
+    <th>kroA100</th>
+    <th>kroE100</th>
+    <th>pr76</th>
+    <th>rat99</th>
+    <th>st70</th>
+  </tr>
+  <tr>
+    <td>Tmax: 100; Tmin: 50; R: 0.96; T: 7000</td>
+    <td>130434</td>
+    <td>26887</td>
+    <td>498617</td>
+    <td>1998</td>
+    <td>130619</td>
+    <td>132640</td>
+    <td>371713</td>
+    <td>5750</td>
+    <td>2692</td>
+  </tr>
+  <tr>
+    <td>Tmax: 10000; Tmin: 10; R: 0.5; T: 10000</td>
+    <td>94.762</td>
+    <td>20.263</td>
+    <td>527.773</td>
+    <td>1.884</td>
+    <td>122.802</td>
+    <td>148.251</td>
+    <td>436.661</td>
+    <td>6.437</td>
+    <td>2.736</td>
+  </tr>
+  <tr>
+    <td>Tmax: 10000; Tmin: 10; R: 0.5; T: 10000</td>
+    <td>114.582</td>
+    <td>23.419</td>
+    <td>495.219</td>
+    <td>1.981</td>
+    <td>115.480</td>
+    <td>124.655</td>
+    <td>457.721</td>
+    <td>6.203</td>
+    <td>2.725</td>
+  </tr>
+</table>
