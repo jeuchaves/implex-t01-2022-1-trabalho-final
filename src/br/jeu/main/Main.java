@@ -36,8 +36,8 @@ public class Main {
 		}
 	}
 	
-	private static void testeSimulateAnnealing(
-			double tempMax, double razaoEsfriamento, int qtdIteracoes, double tempMin) throws IOException {
+	private static void simulateAnnealing(
+			double tempMax, double razaoEsfriamento, long qtdIteracoes, double tempMin) throws IOException {
 		for(int j = 0; j < registros.length; j++) {
 			long tempoInicial = System.currentTimeMillis();
 			Posicao[] posicoes = Leitor.lerArquivo(registros[j]);
@@ -58,7 +58,7 @@ public class Main {
 		 * Temperatura Minima - 5
 		 */
 		System.out.println("Teste A");
-		testeSimulateAnnealing(10, 0.95, 20, 5);
+		simulateAnnealing(10, 0.95, 20, 5);
 		
 		/*
 		 * Teste B
@@ -68,7 +68,7 @@ public class Main {
 		 * Temperatura Minima - 10
 		 */
 		System.out.println("Teste B");
-		testeSimulateAnnealing(100, 0.9, 25, 10);
+		simulateAnnealing(100, 0.9, 25, 10);
 		
 		/*
 		 * Teste C
@@ -78,7 +78,7 @@ public class Main {
 		 * Temperatura Minima - 5
 		 */
 		System.out.println("Teste C");
-		testeSimulateAnnealing(100, 0.80, 50, 5);
+		simulateAnnealing(10000, 0.99, 1000, 5);
 		
 	}
 

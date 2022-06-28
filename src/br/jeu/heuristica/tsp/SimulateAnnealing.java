@@ -10,7 +10,6 @@ public class SimulateAnnealing extends Heuristica {
 	private double temperaturaMaxima;
 	private double temperaturaMinima;
 	private double razaoEsfriamento;
-	private long qtdIteracoes;
 	
 	/**
 	 * @param qtdIteracoes - Quantidade de vezes que o laco ira se repetir
