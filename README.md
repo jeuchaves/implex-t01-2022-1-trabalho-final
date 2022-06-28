@@ -381,4 +381,62 @@ Como ainda não tinha a fórmula para geração de vizinhos do trabalho eu reali
     <td>173s</td>
   </tr>
 </table>
-  
+
+### Simulated Annealing
+
+#### Versão 1.0
+
+##### Relatório sobre o programa: 27/06/2022 às 22h03
+Essa versão apresenta um problema onde os resultados obtidos demoram muito pouco tempo para serem gerados (próximo dos 0s).
+Caso C -> Temperatura máxima: 100; Razão de esfriamento: 0.8; Quantidade de iterações: 20; Temperatura minima: 5;
+
+<table>
+  <tr>
+    <th>Caso</th>
+    <th>att48</th>
+    <th>berlin52</th>
+    <th>bier127</th>
+    <th>eil76</th>
+    <th>kroA100</th>
+    <th>kroE100</th>
+    <th>pr76</th>
+    <th>rat99</th>
+    <th>st70</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>131.153</td>
+    <td>27.849</td>
+    <td>603.251</td>
+    <td>2.141</td>
+    <td>179.198</td>
+    <td>178.248</td>
+    <td>582.606</td>
+    <td>7.629</td>
+    <td>3.701</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>171.399</td>
+    <td>31.140</td>
+    <td>641.302</td>
+    <td>2.407</td>
+    <td>164.667</td>
+    <td>170.307</td>
+    <td>591.350</td>
+    <td>8.344</td>
+    <td>3.556</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>163.050</td>
+    <td>32.306</td>
+    <td>675.355</td>
+    <td>2.441</td>
+    <td>193.988</td>
+    <td>167.701</td>
+    <td>581.040</td>
+    <td>8.221</td>
+    <td>3.585</td>
+  </tr>
+</table>
