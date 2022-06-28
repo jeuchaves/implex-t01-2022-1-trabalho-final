@@ -50,27 +50,24 @@ public class Main {
 	
 	public static void testesSimulateAnnealing() throws IOException {
 		
-		/*
-		 * Teste C
-		 * Temperatura Maxima - 100
-		 * Razao de Esfriamento - .80
-		 * Quantidade de iteracoes - 50
-		 * Temperatura Minima - 5
-		 */
 		long qtdIteracoes; double razao; double tempMax; double tempMin;
 		
-		qtdIteracoes = 7000;
-		razao = 0.96;
-		tempMax = 100;
-		tempMin = 50;
+		qtdIteracoes = 20;
+		razao = 0.95;
+		tempMax = 10;
+		tempMin = 5;
+		System.out.println("Teste A");
 		simulateAnnealing(tempMax, razao, qtdIteracoes, tempMin);
+		System.out.println();
 		
-		qtdIteracoes = 1900;
-		razao = 0.55;
-		tempMax = 10000;
-		tempMin = 100;
+		qtdIteracoes = 25;
+		razao = 0.9;
+		tempMax = 100;
+		tempMin = 10;
+		System.out.println("Teste B");
 		simulateAnnealing(tempMax, razao, qtdIteracoes, tempMin);
-
+		System.out.println();
+		
 		qtdIteracoes = 10000;
 		razao = 0.5;
 		tempMax = 10000;
@@ -79,7 +76,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws IOException {
-//		testesHillClimb();
+		testesHillClimb();
 		testesSimulateAnnealing();
 	}
 }
