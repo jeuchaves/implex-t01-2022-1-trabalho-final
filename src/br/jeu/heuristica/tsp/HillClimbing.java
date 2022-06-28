@@ -1,7 +1,5 @@
 package br.jeu.heuristica.tsp;
 
-import java.util.Random;
-
 import br.jeu.util.Posicao;
 
 /**
@@ -19,31 +17,7 @@ public class HillClimbing extends Heuristica {
 	}
 	
 	/**
-	 * Escolher aleatoriamente um caminho entre todos os vertices
-	 * @return Caminho escolhido
-	 */
-	public int[] selecionarPontoCorrenteAleatoriamente() {
-		int[] vertices = new int[posicoes.length];
-		int i = 0;
-		while(i < posicoes.length-1) {
-			Random gerador = new Random();
-			int numeroRandomico = gerador.nextInt(posicoes.length);
-			
-			// Verificar se o numero sorteado ja contem no vetor
-			boolean contem = false;
-			for(int j = 0; j < vertices.length; j++)
-				if(vertices[j] == numeroRandomico) contem = true;
-			
-			// Caso o numero ainda nao tenha sido selecionado entao adiciona no vetor
-			if(!contem) { 
-				vertices[i] = numeroRandomico;
-				i++;
-			}
-		} return vertices;
-	}
-	
-	/**
-	 * Algoritmo que busca utilizando HillClimbing o menor caminho para o TSP
+	 * Algoritmo que busca utilizando HillClimbing para encontrar o menor caminho para o TSP
 	 * @return inteiro contendo o menor caminho
 	 */
 	public int encontrarMenorCaminho() {

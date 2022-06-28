@@ -1,6 +1,7 @@
 package br.jeu.heuristica.tsp;
 
 import java.util.Arrays;
+import java.util.Random;
 
 import br.jeu.util.Posicao;
 
@@ -18,8 +19,8 @@ public abstract class Heuristica {
 	 * @param posicoes - Lista contendo todos os vertices do grafo
 	 */
 	public Heuristica(long qtdIteracoes, Posicao[] posicoes) {
-		this.qtdIteracoes = qtdIteracoes;
 		this.posicoes = posicoes;
+		this.qtdIteracoes = qtdIteracoes;
 	}
 	
 	/**
@@ -85,5 +86,29 @@ public abstract class Heuristica {
 			}
 		}
 		return new int[] {index, menor};
+	}
+	
+	/**
+	 * Escolher aleatoriamente um caminho entre todos os vertices
+	 * @return Caminho escolhido
+	 */
+	protected int[] selecionarPontoCorrenteAleatoriamente() {
+		int[] vertices = new int[posicoes.length];
+		int i = 0;
+		while(i < posicoes.length-1) {
+			Random gerador = new Random();
+			int numeroRandomico = gerador.nextInt(posicoes.length);
+			
+			// Verificar se o numero sorteado ja contem no vetor
+			boolean contem = false;
+			for(int j = 0; j < vertices.length; j++)
+				if(vertices[j] == numeroRandomico) contem = true;
+			
+			// Caso o numero ainda nao tenha sido selecionado entao adiciona no vetor
+			if(!contem) { 
+				vertices[i] = numeroRandomico;
+				i++;
+			}
+		} return vertices;
 	}
 }
