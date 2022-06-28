@@ -388,7 +388,7 @@ Como ainda não tinha a fórmula para geração de vizinhos do trabalho eu reali
 
 ##### Relatório sobre o programa: 27/06/2022 às 22h03
 Essa versão apresenta um problema onde os resultados obtidos demoram muito pouco tempo para serem gerados (próximo dos 0s).
-Caso C -> Temperatura máxima: 100; Razão de esfriamento: 0.8; Quantidade de iterações: 20; Temperatura minima: 5;
+<br>Caso C -> Temperatura máxima: 100; Razão de esfriamento: 0.8; Quantidade de iterações: 20; Temperatura minima: 5;
 
 <table>
   <tr>
